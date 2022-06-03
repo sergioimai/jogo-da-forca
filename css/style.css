@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   background-color:#E5E5E5;
+  font-family: 'Inter', sans-serif;
 }
 
 a{text-decoration: none; background-color:transparent; color: white;}
@@ -37,7 +38,6 @@ span {
 .button {
     grid-column: 4/5;
     padding-top: 10px;
-    font-family: Inter, sans-serif;
     font-size: 16px;
     text-align: center;              
 }
@@ -49,7 +49,6 @@ span {
     padding: 20px;
     margin-bottom: 10px;
     background-color: #0A3871;
-    font-family: inter, sans-serif;
     font-size: 16px;
     font-weight: bold;
     color: white;
@@ -63,7 +62,6 @@ span {
     padding: 20px;
     margin-bottom: 10px;
     background-color: lightblue;
-    font-family: inter, sans-serif;
     font-size: 16px;
     font-weight: bold;
     color: #0A3871;

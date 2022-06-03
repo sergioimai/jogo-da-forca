@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>Jogo da Forca - Challenges Alura</title>
+</head>
+<body>
+    <header>
+        <div class="grid">
+            <a href="https://www.alura.com.br/" target="_blank">
+                <img class="imagemLogo" src="./imagens/logo_alura.png" alt="logo alura">
+            </a>
+                <h1>Jogo da Forca</h1>
+        </div>    
+    </header>
+
+    <main>
+        <div class="grid">
+            <h3>Dica: programação </h3>  
+            <canvas id="canvas" width="350" height="200"></canvas>
+                                  
+          
+              <div class="palavra-secreta-container"></div>
+              <div class="letras-erradas-container"></div>
+          
+              <div class="aviso-palavra-repetida">
+                Você já usou essa letra!
+              </div>
+          
+              <div class="popup-container">
+                <div class="popup">
+                  <h2 id="mensagem"></h2>
+                  <button id="btn-jogar" onclick="reiniciarJogo()">
+                    Jogar novamente
+                  </button>
+                </div>
+              </div>
+            <div class="button">
+                <button class="btn-novo-jogo" onclick="novoJogo()">Novo Jogo</button>
+                <button class="btn-desistir" onclick="desistir()">Desistir</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="grid">
+            <div class="page-info">&copy; Created by:::<strong> Sérgio Imai</strong> </div>
+            <a href="https://github.com/sergioimai" target="_blank" class="a-git">
+                <img src="./imagens/github-logo.png" width="45px" alt="github logo">
+            </a>
+            <a href="https://www.linkedin.com/in/sergio-imai-89763110a/" target="_blank" class="a-lkd">
+                <img src="./imagens/linkedin-logo.png" width="30px" alt="linkedin logo">
+            </a>  
+        </div>      
+    </footer>
+
+    <script defer src="./js/script.js"></script>   
+</body>
+</html>

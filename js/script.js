@@ -4,9 +4,7 @@ let letrasErradas = [];
 let letrasCorretas = [];
 console.log(palavraSecreta)
 
-document.addEventListener("keydown", (evento) => {
-  let codigo = evento.keyCode; 
-  if (isLetra(codigo)) {
+document.onkeydown = (evento) => {
     let letra = evento.key.toUpperCase();
     if (letrasErradas.includes(letra)) {
       mostrarAvisoLetraRepetida();
@@ -19,7 +17,6 @@ document.addEventListener("keydown", (evento) => {
     }
     atualizarJogo();
   }
-});
 
 desenharForca();
 mostrarLetrasCertas();
@@ -135,10 +132,6 @@ function mostrarAvisoLetraRepetida() {
   setTimeout(() => {
     aviso.classList.remove("show");
   }, 1000);
-}
-
-function isLetra(codigo) {
-  return codigo >= 65 && codigo <= 90;
 }
 
 function reiniciarJogo() {
